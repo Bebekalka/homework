@@ -1,0 +1,98 @@
+# -*- coding: utf8 -*-
+from t
+kinter import*
+
+root = Tk()
+root.geometry("230x380")
+var1 = IntVar()
+var2 = IntVar()
+text1 = 1
+text2 = 1
+
+def deystvie():
+    global a, text1, text2
+    text2 = int(text1)*a[int(var1.get())]/a[int(var2.get())]
+    lable2.config(text=str(text2))
+    
+lable1 = Label(root, text=text1, bd=4, width=5, height=1,fg='red',font='arial 14')
+lable2 = Label(root, text=text2, bd=4, width=14, height=2,fg='red',font='arial 10')
+radbut11 = Radiobutton(root, text="мм", variable=var1, value=0, command=deystvie)
+radbut12 = Radiobutton(root, text="см", variable=var1, value=1, command=deystvie)
+radbut13 = Radiobutton(root, text="м", variable=var1, value=2, command=deystvie)
+radbut14 = Radiobutton(root, text="км", variable=var1, value=3, command=deystvie)
+radbut15 = Radiobutton(root, text="дм", variable=var1, value=4, command=deystvie)
+radbut16 = Radiobutton(root, text="вершки", variable=var1, value=5, command=deystvie)
+radbut17 = Radiobutton(root, text="дюймы", variable=var1, value=6, command=deystvie)
+radbut18 = Radiobutton(root, text="парсеки", variable=var1, value=7, command=deystvie)
+radbut19 = Radiobutton(root, text="сажени", variable=var1, value=8, command=deystvie)
+radbut110 = Radiobutton(root, text="мили", variable=var1, value=9, command=deystvie)
+radbut111 = Radiobutton(root, text="лье", variable=var1, value=10, command=deystvie)
+radbut112 = Radiobutton(root, text="пяди", variable=var1, value=11, command=deystvie)
+radbut113 = Radiobutton(root, text="футы", variable=var1, value=12, command=deystvie)
+radbut114 = Radiobutton(root, text="аршины", variable=var1, value=13, command=deystvie)
+radbut115 = Radiobutton(root, text="ярды", variable=var1, value=14, command=deystvie)
+radbut116 = Radiobutton(root, text="св.года", variable=var1, value=15, command=deystvie)
+radbut117 = Radiobutton(root, text="версты", variable=var1, value=16, command=deystvie)
+
+radbut21 = Radiobutton(root, text="мм", variable=var2, value=0, command=deystvie)
+radbut22 = Radiobutton(root, text="см", variable=var2, value=1, command=deystvie)
+radbut23 = Radiobutton(root, text="м", variable=var2, value=2, command=deystvie)
+radbut24 = Radiobutton(root, text="км", variable=var2, value=3, command=deystvie)
+radbut25 = Radiobutton(root, text="дм", variable=var2, value=4, command=deystvie)
+radbut26 = Radiobutton(root, text="вершки", variable=var2, value=5, command=deystvie)
+radbut27 = Radiobutton(root, text="дюймы", variable=var2, value=6, command=deystvie)
+radbut28 = Radiobutton(root, text="парсеки", variable=var2, value=7, command=deystvie)
+radbut29 = Radiobutton(root, text="сажени", variable=var2, value=8, command=deystvie)
+radbut210 = Radiobutton(root, text="мили", variable=var2, value=9, command=deystvie)
+radbut211 = Radiobutton(root, text="лье", variable=var2, value=10, command=deystvie)
+radbut212 = Radiobutton(root, text="пяди", variable=var2, value=11, command=deystvie)
+radbut213 = Radiobutton(root, text="футы", variable=var2, value=12, command=deystvie)
+radbut214 = Radiobutton(root, text="аршины", variable=var2, value=13, command=deystvie)
+radbut215 = Radiobutton(root, text="ярды", variable=var2, value=14, command=deystvie)
+radbut216 = Radiobutton(root, text="св.года", variable=var2, value=15, command=deystvie)
+radbut217 = Radiobutton(root, text="версты", variable=var2, value=16, command=deystvie)
+radbut11.select()
+radbut21.select()
+a = [0.001, 0.01, 1, 1000, 0.1, 1/22.5, 1/39.37, 3.24*(10**-17), 1/0.47, 1/0.00062,
+     1/0.00018, 1/5.62, 1/3.28, 1/1.41, 1/1.09, 1/1.06*(10**-16), 1/0.00094]
+
+lable1.place(x=20, y=0)
+lable2.place(x=90, y=0)
+
+radbut11.place(x=0, y=30)
+radbut12.place(x=0, y=50)
+radbut13.place(x=0, y=70)
+radbut14.place(x=0, y=90)
+radbut15.place(x=0, y=110)
+radbut16.place(x=0, y=130)
+radbut17.place(x=0, y=150)
+radbut18.place(x=0, y=170)
+radbut19.place(x=0, y=190)
+radbut110.place(x=0, y=210)
+radbut111.place(x=0, y=230)
+radbut112.place(x=0, y=250)
+radbut113.place(x=0, y=270)
+radbut114.place(x=0, y=290)
+radbut115.place(x=0, y=310)
+radbut116.place(x=0, y=330)
+radbut117.place(x=0, y=350)
+
+radbut21.place(x=150, y=30)
+radbut22.place(x=150, y=50)
+radbut23.place(x=150, y=70)
+radbut24.place(x=150, y=90)
+radbut25.place(x=150, y=110)
+radbut26.place(x=150, y=130)
+radbut27.place(x=150, y=150)
+radbut28.place(x=150, y=170)
+radbut29.place(x=150, y=190)
+radbut210.place(x=150, y=210)
+radbut211.place(x=150, y=230)
+radbut212.place(x=150, y=250)
+radbut213.place(x=150, y=270)
+radbut214.place(x=150, y=290)
+radbut215.place(x=150, y=310)
+radbut216.place(x=150, y=330)
+radbut217.place(x=150, y=350)
+
+root.mainloop()
