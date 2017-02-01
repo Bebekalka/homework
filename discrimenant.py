@@ -93,12 +93,12 @@ def reshit():
                     x2 = (-1*float(en2.get())-(D**0.5))/(2*float(en1.get()))
                     lbx1.config(text="x1="+str(round(x1,4)))
                     lbx2.config(text="x2="+str(round(x2,4)))
-                    lbdisc.config(text="Дискриминант:"+str(D))
+                    lbdisc.config(text="Дискриминант: "+str(D))
                 else:
                     lberr.config(text="Дискриминант меньше 0")
                     lbx1.config(text="x1єØ")
                     lbx2.config(text="x2єØ")
-                    lbdisc.config(text="Дискриминант:"+str(D))
+                    lbdisc.config(text="Дискриминант: "+str(D))
 
 labmain = Label(root, width=11, height=1, text="Ax^2+Bx+C=0", cursor="heart")
 lb1 = Label(root, width=3, height=1, text="A=", cursor="heart")
